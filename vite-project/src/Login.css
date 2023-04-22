@@ -1,0 +1,105 @@
+.container {
+    position: fixed; /* establecer la posición como fija */
+    top: 0; /* colocar el contenedor en la parte superior de la página */
+    left: 0; /* colocar el contenedor en la parte izquierda de la página */
+    width: 100%; /* establecer la anchura en 100% */
+    height: 100%; /* establecer la altura en 100% */
+    display: flex;
+    background-image: url('img/buildingBackground.png');
+    background-size: cover;
+    border-radius: 14px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-column {
+    flex-basis: 50%;
+    height: 100%;
+    background-image: url(img/loginBackground.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .image-column.active {
+    animation: slideIn 1s ease-in-out forwards;
+  }
+  
+  .form-column {
+    flex-basis: 25%;
+    height: 100%;
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }.image-column.active {
+  animation: slideIn 1s ease-in-out forwards;
+}
+  
+  .form-column.active {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #EFEFEF;
+  }
+  
+  input {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    background-color: #EFEFEF;
+    color: #212121;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 4px;
+    border: none;
+    padding: 0.5rem;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3E8E41;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
