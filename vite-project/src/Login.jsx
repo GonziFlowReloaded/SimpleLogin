@@ -5,8 +5,11 @@ function Login() {
   const formRef = useRef(null);
 
   const handleFormClick = () => {
-    const imageColumn = formRef.current.closest('.image-column');
-    imageColumn.classList.add('active');
+    // Activar la animación de entrada de la columna de imagen
+    
+    formRef.current.classList.add('form-column-active');
+
+
   };
   
 
@@ -17,10 +20,10 @@ function Login() {
       <div className="form-column" ref={formRef}>
         <form onClick={handleFormClick}>
           <label htmlFor="usuario">Usuario:</label>
-          <input type="text" id="usuario" name="usuario" required />
+          <input type="text" id="usuario" name="usuario" placeholder='Ingrese su nombre de usuario' required />
 
           <label htmlFor="contraseña">Contraseña:</label>
-          <input type="password" id="contraseña" name="contraseña" required />
+          <input type="password" id="contraseña" name="contraseña" placeholder='Ingrese su contraseña' required />
 
           <input type="submit" value="Iniciar sesión" />
         </form>

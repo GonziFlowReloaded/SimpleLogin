@@ -1,17 +1,18 @@
 .container {
-    position: fixed; /* establecer la posición como fija */
-    top: 0; /* colocar el contenedor en la parte superior de la página */
-    left: 0; /* colocar el contenedor en la parte izquierda de la página */
-    width: 100%; /* establecer la anchura en 100% */
-    height: 100%; /* establecer la altura en 100% */
+    position: fixed;
+    top: 50%; /* Colocar el contenedor en la mitad de la pantalla verticalmente */
+    left: 50%; /* Colocar el contenedor en la mitad de la pantalla horizontalmente */
+    transform: translate(-50%, -50%); /* Corregir la posición del contenedor hacia el centro */
+    width: 80%;
+    height: 80%;
     display: flex;
-    background-image: url('img/buildingBackground.png');
-    background-size: cover;
+    align-items: center;
+    justify-content: center;
     border-radius: 14px;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-  }
+}
+
   
   .image-column {
     flex-basis: 50%;
