@@ -14,17 +14,18 @@
 }
 
   
-  .image-column {
+    .image-column {
     flex-basis: 50%;
     height: 100%;
     background-image: url(img/loginBackground.png);
     background-size: cover;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-  }
+    justify-content: flex-start; /* Alinear los elementos a la izquierda */
+}
+
   
   .image-column.active {
     animation: slideIn 1s ease-in-out forwards;

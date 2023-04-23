@@ -16,6 +16,7 @@ function Login() {
   return (
     <div className="container">
       <div className="image-column">
+        {/* <img src="src\img\architechLogo.png" /> */}
       </div>
       <div className="form-column" ref={formRef}>
         <form onClick={handleFormClick}>
